@@ -15,7 +15,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    KFCameraViewController *controller = [[KFCameraViewController alloc] init];
+    KFCameraViewController *controller = [[KFCameraViewController alloc] initWithNib];
     
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];

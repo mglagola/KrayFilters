@@ -8,14 +8,21 @@
 
 #import "KFCameraViewController.h"
 #import "GPUImage.h"
+#import "KFCaptureButton.h"
+#import "KFImageHeatFilter.h"
  
 @interface KFCameraViewController () {
     GPUImageVideoCamera *camera;
-    GPUImageFilter *sketchFilter;
+    GPUImageFilter *filter;
+    
+    IBOutlet KFCaptureButton *captureButton;
+    IBOutlet GPUImageView *gpuImageView;
+
+//    CGPoint panStartPoint;
+    NSInteger currentFilter;
 }
 
 @property (nonatomic) ALAssetsLibrary *assetsLibrary;
-
 
 @end
 
@@ -27,10 +34,32 @@ NSUInteger UIViewAutoresizingMaskAll() {
     return UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
+- (NSArray*) filterClasses {
+    return @[[GPUImageSketchFilter class],
+             [GPUImageSmoothToonFilter class],
+             [GPUImagePrewittEdgeDetectionFilter class],
+             [GPUImageErosionFilter class],
+             [KFImageHeatFilter class],
+             ];
+}
+
 - (ALAssetsLibrary*) assetsLibrary {
     if (!_assetsLibrary)
         _assetsLibrary = [[ALAssetsLibrary alloc] init];
     return _assetsLibrary;
+}
+
+- (void) changeFilter:(GPUImageFilter*)toFilter {
+    //remove old filter
+    if (filter) {
+        [camera removeTarget:filter];
+        [filter removeTarget:gpuImageView];
+    }
+    
+    //add new filter
+    filter = toFilter;
+    [camera addTarget:filter];
+    [filter addTarget:gpuImageView];
 }
 
 - (void)viewDidLoad
@@ -38,33 +67,55 @@ NSUInteger UIViewAutoresizingMaskAll() {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor blackColor];
+    
+    captureButton.layer.cornerRadius = captureButton.width*.25f;
+    
+    currentFilter = 0;
 
     camera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1920x1080 cameraPosition:AVCaptureDevicePositionBack];
     camera.outputImageOrientation = self.interfaceOrientation;
-    sketchFilter = [[GPUImageSketchFilter alloc] init];
-    [camera addTarget:sketchFilter];
+    gpuImageView.autoresizingMask = UIViewAutoresizingMaskAll();
+    [self changeFilter:[[GPUImageSketchFilter alloc] init]];
 
-    GPUImageView *imageView = [[GPUImageView alloc] initWithFrame:self.view.frame];
-    imageView.autoresizingMask = UIViewAutoresizingMaskAll();
-    [self.view addSubview:imageView];
-    [sketchFilter addTarget:imageView];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *bImage = [UIImage imageNamed:@"camera-button"];
-    CGSize bSize = CGSizeMake(60, 46);
-    button.frame = CGRectMake(self.view.width*.5f-bSize.width*.5f, self.view.height-bSize.height*1.1f, bSize.width, bSize.height);
-    [button setImage:bImage forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(captureButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
     
     [camera startCameraCapture];
     
+    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    doubleTap.cancelsTouchesInView = NO;
+    doubleTap.numberOfTapsRequired = 2;
+    [gpuImageView addGestureRecognizer:doubleTap];
+        
+//    UIPanGestureRecognizer *panGest = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureDetected:)];
+//    panGest.cancelsTouchesInView = NO;
+//    panGest.delaysTouchesEnded = NO;
+//    [gpuImageView addGestureRecognizer:panGest];
 }
 
-- (void) captureButtonPressed {
+//- (void) panGestureDetected:(UIPanGestureRecognizer*)gesture {
+//    CGPoint currentLoc = [gesture translationInView:gpuImageView];
+//    if (gesture.state == UIGestureRecognizerStateBegan) {
+//        panStartPoint = currentLoc;
+//    }
+//    
+//    CGFloat offset = currentLoc.y - panStartPoint.y;
+//    NSLog(@"%f", offset);
+//}
+
+- (void) tapGesture:(UITapGestureRecognizer*)gesture {
+    currentFilter++;
+    if (currentFilter > self.filterClasses.count-1)
+        currentFilter = 0;
+    
+    Class newFilterClass = [[self filterClasses] objectAtIndex:currentFilter];
+    [self changeFilter:[[newFilterClass alloc] init]];
+}
+
+- (IBAction)captureButtonPressed:(id)sender {
+    if (!filter) return;
+    
     [SVProgressHUD showWithStatus:@"Saving..."];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        UIImage *image = [sketchFilter imageFromCurrentlyProcessedOutput];
+        UIImage *image = [filter imageFromCurrentlyProcessedOutput];
         [self.assetsLibrary writeImageToSavedPhotosAlbum:image.CGImage orientation:(ALAssetOrientation)image.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (error) {
@@ -77,6 +128,7 @@ NSUInteger UIViewAutoresizingMaskAll() {
     });
 }
 
+#pragma mark - Interface Orientation Change
 - (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration  {
     if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation))
         toInterfaceOrientation = toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ? UIInterfaceOrientationLandscapeRight : UIInterfaceOrientationLandscapeLeft;
