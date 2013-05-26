@@ -7,6 +7,8 @@ The app works with about 20-24FPS on iPhone 5.  Other devices not tested, will m
 
 ## Setup
 You need [CocoaPods](http://cocoapods.org/) installed.
+
+##### In terminal:
 - ```git clone https://github.com/mglagola/KrayFilters.git```
 - ```cd KrayFilters```
 - ```pod install```
