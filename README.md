@@ -3,7 +3,7 @@
 
 Just a quick little [GPUImage](https://github.com/BradLarson/GPUImage) hack. 
 
-The app works with about 20-24FPS on iPhone 5.  Other devices not tested, will most likely be slower.
+The app works with about 20-24FPS (Under Resolution: 1920x1080) on iPhone 5.  Other devices not tested, will most likely be slower.
 
 ## Setup
 You need [CocoaPods](http://cocoapods.org/) installed.
