@@ -21,21 +21,15 @@
 		4D3DB2101751C93700AC5AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB1F11751C93700AC5AD7 /* Foundation.framework */; };
 		4D3DB2181751C93700AC5AD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB2161751C93700AC5AD7 /* InfoPlist.strings */; };
 		4D3DB21B1751C93700AC5AD7 /* KrayFiltersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DB21A1751C93700AC5AD7 /* KrayFiltersTests.m */; };
-		4D3DBBE01751CB6B00AC5AD7 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBC21751CB4B00AC5AD7 /* libGPUImage.a */; };
 		4D3DBBE31751CCF100AC5AD7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE21751CCF100AC5AD7 /* CoreMedia.framework */; };
 		4D3DBBE51751CCF700AC5AD7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE41751CCF700AC5AD7 /* CoreVideo.framework */; };
 		4D3DBBE71751CCFD00AC5AD7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE61751CCFD00AC5AD7 /* OpenGLES.framework */; };
 		4D3DBBE91751CD0200AC5AD7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE81751CD0200AC5AD7 /* QuartzCore.framework */; };
 		4D3DBBEB1751CD0600AC5AD7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */; };
 		4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */; };
-		4D3DBC191751D85A00AC5AD7 /* MGInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBBFB1751D85A00AC5AD7 /* MGInstagram.m */; };
 		4D3DBC301751DA4C00AC5AD7 /* camera-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DBC2F1751DA4C00AC5AD7 /* camera-button.png */; };
-		4D3DBC431751DABF00AC5AD7 /* UIDevice+isIPAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC341751DABF00AC5AD7 /* UIDevice+isIPAD.m */; };
-		4D3DBC441751DABF00AC5AD7 /* UILabel+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC361751DABF00AC5AD7 /* UILabel+Font.m */; };
-		4D3DBC451751DABF00AC5AD7 /* UIScreen+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC381751DABF00AC5AD7 /* UIScreen+Frame.m */; };
-		4D3DBC461751DABF00AC5AD7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC3A1751DABF00AC5AD7 /* UIView+Frame.m */; };
-		4D3DBC471751DABF00AC5AD7 /* UIView+Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC3C1751DABF00AC5AD7 /* UIView+Xib.m */; };
-		4D3DBC481751DABF00AC5AD7 /* UIViewController+Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC3E1751DABF00AC5AD7 /* UIViewController+Xib.m */; };
+		4D3DBC4D1751DF8A00AC5AD7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBC4C1751DF8A00AC5AD7 /* AssetsLibrary.framework */; };
+		E8F275750FA44D0CA7D7F8DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A36B32A297E49ADA313D8E3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,30 +40,10 @@
 			remoteGlobalIDString = 4D3DB1EB1751C93700AC5AD7;
 			remoteInfo = KrayFilters;
 		};
-		4D3DBBC11751CB4B00AC5AD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
-			remoteInfo = GPUImage;
-		};
-		4D3DBBC31751CB4B00AC5AD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
-			remoteInfo = GPUImageTests;
-		};
-		4D3DBBF41751CDA100AC5AD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
-			remoteInfo = GPUImage;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD87198831046A8BD32B4B0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		4D3DB1EC1751C93700AC5AD7 /* KrayFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrayFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3DB1EF1751C93700AC5AD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4D3DB1F11751C93700AC5AD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,7 +63,6 @@
 		4D3DB2171751C93700AC5AD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D3DB2191751C93700AC5AD7 /* KrayFiltersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KrayFiltersTests.h; sourceTree = "<group>"; };
 		4D3DB21A1751C93700AC5AD7 /* KrayFiltersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KrayFiltersTests.m; sourceTree = "<group>"; };
-		4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
 		4D3DBBE21751CCF100AC5AD7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4D3DBBE41751CCF700AC5AD7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		4D3DBBE61751CCFD00AC5AD7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -97,22 +70,9 @@
 		4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4D3DBBF11751CD5300AC5AD7 /* KFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCameraViewController.h; sourceTree = "<group>"; };
 		4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCameraViewController.m; sourceTree = "<group>"; };
-		4D3DBBFA1751D85A00AC5AD7 /* MGInstagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGInstagram.h; sourceTree = "<group>"; };
-		4D3DBBFB1751D85A00AC5AD7 /* MGInstagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGInstagram.m; sourceTree = "<group>"; };
 		4D3DBC2F1751DA4C00AC5AD7 /* camera-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-button.png"; sourceTree = "<group>"; };
-		4D3DBC331751DABF00AC5AD7 /* UIDevice+isIPAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+isIPAD.h"; sourceTree = "<group>"; };
-		4D3DBC341751DABF00AC5AD7 /* UIDevice+isIPAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+isIPAD.m"; sourceTree = "<group>"; };
-		4D3DBC351751DABF00AC5AD7 /* UILabel+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Font.h"; sourceTree = "<group>"; };
-		4D3DBC361751DABF00AC5AD7 /* UILabel+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Font.m"; sourceTree = "<group>"; };
-		4D3DBC371751DABF00AC5AD7 /* UIScreen+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Frame.h"; sourceTree = "<group>"; };
-		4D3DBC381751DABF00AC5AD7 /* UIScreen+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Frame.m"; sourceTree = "<group>"; };
-		4D3DBC391751DABF00AC5AD7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		4D3DBC3A1751DABF00AC5AD7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		4D3DBC3B1751DABF00AC5AD7 /* UIView+Xib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Xib.h"; sourceTree = "<group>"; };
-		4D3DBC3C1751DABF00AC5AD7 /* UIView+Xib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Xib.m"; sourceTree = "<group>"; };
-		4D3DBC3D1751DABF00AC5AD7 /* UIViewController+Xib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Xib.h"; sourceTree = "<group>"; };
-		4D3DBC3E1751DABF00AC5AD7 /* UIViewController+Xib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Xib.m"; sourceTree = "<group>"; };
-		4D3DBC3F1751DABF00AC5AD7 /* Extensions-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Extensions-Prefix.h"; sourceTree = "<group>"; };
+		4D3DBC4C1751DF8A00AC5AD7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6A36B32A297E49ADA313D8E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,15 +80,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3DBC4D1751DF8A00AC5AD7 /* AssetsLibrary.framework in Frameworks */,
 				4D3DBBEB1751CD0600AC5AD7 /* AVFoundation.framework in Frameworks */,
 				4D3DBBE91751CD0200AC5AD7 /* QuartzCore.framework in Frameworks */,
 				4D3DBBE71751CCFD00AC5AD7 /* OpenGLES.framework in Frameworks */,
 				4D3DBBE51751CCF700AC5AD7 /* CoreVideo.framework in Frameworks */,
 				4D3DBBE31751CCF100AC5AD7 /* CoreMedia.framework in Frameworks */,
-				4D3DBBE01751CB6B00AC5AD7 /* libGPUImage.a in Frameworks */,
 				4D3DB1F01751C93700AC5AD7 /* UIKit.framework in Frameworks */,
 				4D3DB1F21751C93700AC5AD7 /* Foundation.framework in Frameworks */,
 				4D3DB1F41751C93700AC5AD7 /* CoreGraphics.framework in Frameworks */,
+				E8F275750FA44D0CA7D7F8DB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +111,9 @@
 			children = (
 				4D3DB1F51751C93700AC5AD7 /* KrayFilters */,
 				4D3DB2131751C93700AC5AD7 /* KrayFiltersTests */,
-				4D3DB2241751C9E500AC5AD7 /* Vendors */,
 				4D3DB1EE1751C93700AC5AD7 /* Frameworks */,
 				4D3DB1ED1751C93700AC5AD7 /* Products */,
+				0CD87198831046A8BD32B4B0 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +129,7 @@
 		4D3DB1EE1751C93700AC5AD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D3DBC4C1751DF8A00AC5AD7 /* AssetsLibrary.framework */,
 				4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */,
 				4D3DBBE81751CD0200AC5AD7 /* QuartzCore.framework */,
 				4D3DBBE61751CCFD00AC5AD7 /* OpenGLES.framework */,
@@ -177,6 +139,7 @@
 				4D3DB1F11751C93700AC5AD7 /* Foundation.framework */,
 				4D3DB1F31751C93700AC5AD7 /* CoreGraphics.framework */,
 				4D3DB20D1751C93700AC5AD7 /* SenTestingKit.framework */,
+				6A36B32A297E49ADA313D8E3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,41 +189,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4D3DB2241751C9E500AC5AD7 /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DBC311751DABF00AC5AD7 /* Extensions */,
-				4D3DBBF61751D85A00AC5AD7 /* MGInstagram */,
-				4D3DB7FD1751CB4500AC5AD7 /* GPUImage */,
-			);
-			path = Vendors;
-			sourceTree = "<group>";
-		};
-		4D3DB7FD1751CB4500AC5AD7 /* GPUImage */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DB9181751CB4800AC5AD7 /* framework */,
-			);
-			path = GPUImage;
-			sourceTree = "<group>";
-		};
-		4D3DB9181751CB4800AC5AD7 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */,
-			);
-			path = framework;
-			sourceTree = "<group>";
-		};
-		4D3DB91A1751CB4800AC5AD7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DBBC21751CB4B00AC5AD7 /* libGPUImage.a */,
-				4D3DBBC41751CB4B00AC5AD7 /* GPUImageTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4D3DBBEF1751CD5300AC5AD7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,23 +204,6 @@
 				4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		4D3DBBF61751D85A00AC5AD7 /* MGInstagram */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DBBF91751D85A00AC5AD7 /* MGInstagram */,
-			);
-			path = MGInstagram;
-			sourceTree = "<group>";
-		};
-		4D3DBBF91751D85A00AC5AD7 /* MGInstagram */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DBBFA1751D85A00AC5AD7 /* MGInstagram.h */,
-				4D3DBBFB1751D85A00AC5AD7 /* MGInstagram.m */,
-			);
-			path = MGInstagram;
 			sourceTree = "<group>";
 		};
 		4D3DBC2D1751DA4C00AC5AD7 /* Resources */ = {
@@ -311,34 +222,6 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		4D3DBC311751DABF00AC5AD7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DBC321751DABF00AC5AD7 /* Categories */,
-				4D3DBC3F1751DABF00AC5AD7 /* Extensions-Prefix.h */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		4D3DBC321751DABF00AC5AD7 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				4D3DBC331751DABF00AC5AD7 /* UIDevice+isIPAD.h */,
-				4D3DBC341751DABF00AC5AD7 /* UIDevice+isIPAD.m */,
-				4D3DBC351751DABF00AC5AD7 /* UILabel+Font.h */,
-				4D3DBC361751DABF00AC5AD7 /* UILabel+Font.m */,
-				4D3DBC371751DABF00AC5AD7 /* UIScreen+Frame.h */,
-				4D3DBC381751DABF00AC5AD7 /* UIScreen+Frame.m */,
-				4D3DBC391751DABF00AC5AD7 /* UIView+Frame.h */,
-				4D3DBC3A1751DABF00AC5AD7 /* UIView+Frame.m */,
-				4D3DBC3B1751DABF00AC5AD7 /* UIView+Xib.h */,
-				4D3DBC3C1751DABF00AC5AD7 /* UIView+Xib.m */,
-				4D3DBC3D1751DABF00AC5AD7 /* UIViewController+Xib.h */,
-				4D3DBC3E1751DABF00AC5AD7 /* UIViewController+Xib.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,14 +229,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3DB21E1751C93700AC5AD7 /* Build configuration list for PBXNativeTarget "KrayFilters" */;
 			buildPhases = (
+				8FE53B64D4C24A48BBBD4744 /* Check Pods Manifest.lock */,
 				4D3DB1E81751C93700AC5AD7 /* Sources */,
 				4D3DB1E91751C93700AC5AD7 /* Frameworks */,
 				4D3DB1EA1751C93700AC5AD7 /* Resources */,
+				A73171D066724DFC912A6349 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D3DBBF51751CDA100AC5AD7 /* PBXTargetDependency */,
 			);
 			name = KrayFilters;
 			productName = KrayFilters;
@@ -399,12 +283,6 @@
 			mainGroup = 4D3DB1E31751C93700AC5AD7;
 			productRefGroup = 4D3DB1ED1751C93700AC5AD7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4D3DB91A1751CB4800AC5AD7 /* Products */;
-					ProjectRef = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4D3DB1EB1751C93700AC5AD7 /* KrayFilters */,
@@ -412,23 +290,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4D3DBBC21751CB4B00AC5AD7 /* libGPUImage.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGPUImage.a;
-			remoteRef = 4D3DBBC11751CB4B00AC5AD7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D3DBBC41751CB4B00AC5AD7 /* GPUImageTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GPUImageTests.octest;
-			remoteRef = 4D3DBBC31751CB4B00AC5AD7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4D3DB1EA1751C93700AC5AD7 /* Resources */ = {
@@ -467,6 +328,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		8FE53B64D4C24A48BBBD4744 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		A73171D066724DFC912A6349 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -477,13 +366,6 @@
 				4D3DB1FC1751C93700AC5AD7 /* main.m in Sources */,
 				4D3DB2001751C93700AC5AD7 /* KFAppDelegate.m in Sources */,
 				4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */,
-				4D3DBC191751D85A00AC5AD7 /* MGInstagram.m in Sources */,
-				4D3DBC431751DABF00AC5AD7 /* UIDevice+isIPAD.m in Sources */,
-				4D3DBC441751DABF00AC5AD7 /* UILabel+Font.m in Sources */,
-				4D3DBC451751DABF00AC5AD7 /* UIScreen+Frame.m in Sources */,
-				4D3DBC461751DABF00AC5AD7 /* UIView+Frame.m in Sources */,
-				4D3DBC471751DABF00AC5AD7 /* UIView+Xib.m in Sources */,
-				4D3DBC481751DABF00AC5AD7 /* UIViewController+Xib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,11 +384,6 @@
 			isa = PBXTargetDependency;
 			target = 4D3DB1EB1751C93700AC5AD7 /* KrayFilters */;
 			targetProxy = 4D3DB2111751C93700AC5AD7 /* PBXContainerItemProxy */;
-		};
-		4D3DBBF51751CDA100AC5AD7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GPUImage;
-			targetProxy = 4D3DBBF41751CDA100AC5AD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -590,26 +467,24 @@
 		};
 		4D3DB21F1751C93700AC5AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD87198831046A8BD32B4B0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrayFilters/KrayFilters-Prefix.pch";
-				HEADER_SEARCH_PATHS = "Vendors/GPUImage/framework/**";
 				INFOPLIST_FILE = "KrayFilters/KrayFilters-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		4D3DB2201751C93700AC5AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD87198831046A8BD32B4B0 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KrayFilters/KrayFilters-Prefix.pch";
-				HEADER_SEARCH_PATHS = "Vendors/GPUImage/framework/**";
 				INFOPLIST_FILE = "KrayFilters/KrayFilters-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -667,6 +542,7 @@
 				4D3DB2201751C93700AC5AD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D3DB2211751C93700AC5AD7 /* Build configuration list for PBXNativeTarget "KrayFiltersTests" */ = {
 			isa = XCConfigurationList;
@@ -675,6 +551,7 @@
 				4D3DB2231751C93700AC5AD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

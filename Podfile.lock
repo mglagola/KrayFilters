@@ -1,0 +1,20 @@
+PODS:
+  - GPUImage (0.1.0)
+  - iOS-Extensions (0.0.1)
+  - SVProgressHUD (0.9)
+
+DEPENDENCIES:
+  - GPUImage
+  - iOS-Extensions (from `https://github.com/mglagola/iOS-Extensions.git`)
+  - SVProgressHUD
+
+EXTERNAL SOURCES:
+  iOS-Extensions:
+    :git: https://github.com/mglagola/iOS-Extensions.git
+
+SPEC CHECKSUMS:
+  GPUImage: 5b902c1df2afe0ac30a8e3e7379f9c0bb25c7c85
+  iOS-Extensions: d127735feb634928c725bdc643a3eb0791d5a768
+  SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
+
+COCOAPODS: 0.20.1

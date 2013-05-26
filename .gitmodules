@@ -1,9 +1,0 @@
-[submodule "Vendors/GPUImage"]
-	path = Vendors/GPUImage
-	url = https://github.com/BradLarson/GPUImage.git
-[submodule "Vendors/MGInstagram"]
-	path = Vendors/MGInstagram
-	url = https://github.com/mglagola/MGInstagram.git
-[submodule "Vendors/Extensions"]
-	path = Vendors/Extensions
-	url = https://github.com/mglagola/iOS-Extensions.git

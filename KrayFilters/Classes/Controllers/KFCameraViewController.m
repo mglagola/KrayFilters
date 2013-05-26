@@ -8,19 +8,29 @@
 
 #import "KFCameraViewController.h"
 #import "GPUImage.h"
-#import "MGInstagram.h"
-
+ 
 @interface KFCameraViewController () {
     GPUImageVideoCamera *camera;
     GPUImageFilter *sketchFilter;
 }
 
+@property (nonatomic) ALAssetsLibrary *assetsLibrary;
+
+
 @end
 
 @implementation KFCameraViewController
 
+@synthesize assetsLibrary = _assetsLibrary;
+
 NSUInteger UIViewAutoresizingMaskAll() {
     return UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+}
+
+- (ALAssetsLibrary*) assetsLibrary {
+    if (!_assetsLibrary)
+        _assetsLibrary = [[ALAssetsLibrary alloc] init];
+    return _assetsLibrary;
 }
 
 - (void)viewDidLoad
@@ -52,8 +62,19 @@ NSUInteger UIViewAutoresizingMaskAll() {
 }
 
 - (void) captureButtonPressed {
-    UIImage *image = [sketchFilter imageFromCurrentlyProcessedOutput];
-    UIImageWriteToSavedPhotosAlbum(image, NULL, NULL, NULL);
+    [SVProgressHUD showWithStatus:@"Saving..."];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        UIImage *image = [sketchFilter imageFromCurrentlyProcessedOutput];
+        [self.assetsLibrary writeImageToSavedPhotosAlbum:image.CGImage orientation:(ALAssetOrientation)image.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (error) {
+                    [SVProgressHUD showErrorWithStatus:@"Error Saving!"];
+                    return;
+                }
+                [SVProgressHUD showSuccessWithStatus:@"Photo Saved!"];
+            });
+        }];
+    });
 }
 
 - (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration  {
