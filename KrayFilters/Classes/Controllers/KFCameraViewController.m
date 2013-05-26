@@ -9,7 +9,7 @@
 #import "KFCameraViewController.h"
 #import "GPUImage.h"
 #import "KFCaptureButton.h"
-#import "KFImageHeatFilter.h"
+#import "KFImageRedBlueFilter.h"
  
 @interface KFCameraViewController () {
     GPUImageVideoCamera *camera;
@@ -38,8 +38,7 @@ NSUInteger UIViewAutoresizingMaskAll() {
     return @[[GPUImageSketchFilter class],
              [GPUImageSmoothToonFilter class],
              [GPUImagePrewittEdgeDetectionFilter class],
-             [GPUImageErosionFilter class],
-             [KFImageHeatFilter class],
+             [KFImageRedBlueFilter class],
              ];
 }
 
@@ -80,11 +79,11 @@ NSUInteger UIViewAutoresizingMaskAll() {
     
     [camera startCameraCapture];
     
-    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
-    doubleTap.cancelsTouchesInView = NO;
-    doubleTap.numberOfTapsRequired = 2;
-    [gpuImageView addGestureRecognizer:doubleTap];
-        
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapGesture:)];
+    tapGesture.cancelsTouchesInView = NO;
+    tapGesture.numberOfTapsRequired = 2;
+    [gpuImageView addGestureRecognizer:tapGesture];
+    
 //    UIPanGestureRecognizer *panGest = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureDetected:)];
 //    panGest.cancelsTouchesInView = NO;
 //    panGest.delaysTouchesEnded = NO;
@@ -101,7 +100,7 @@ NSUInteger UIViewAutoresizingMaskAll() {
 //    NSLog(@"%f", offset);
 //}
 
-- (void) tapGesture:(UITapGestureRecognizer*)gesture {
+- (void) doubleTapGesture:(UITapGestureRecognizer*)gesture {
     currentFilter++;
     if (currentFilter > self.filterClasses.count-1)
         currentFilter = 0;
@@ -129,10 +128,18 @@ NSUInteger UIViewAutoresizingMaskAll() {
 }
 
 #pragma mark - Interface Orientation Change
+- (UIInterfaceOrientation) getPropperOrientation {
+    return [self getPropperOrientationForOrientation:self.interfaceOrientation];
+}
+
+- (UIInterfaceOrientation) getPropperOrientationForOrientation:(UIInterfaceOrientation)orientation {
+    if (UIInterfaceOrientationIsLandscape(orientation))
+        orientation = orientation == UIInterfaceOrientationLandscapeLeft ? UIInterfaceOrientationLandscapeRight : UIInterfaceOrientationLandscapeLeft;
+    return orientation;
+}
+
 - (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration  {
-    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation))
-        toInterfaceOrientation = toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ? UIInterfaceOrientationLandscapeRight : UIInterfaceOrientationLandscapeLeft;
-    camera.outputImageOrientation = toInterfaceOrientation;
+    camera.outputImageOrientation = [self getPropperOrientationForOrientation:toInterfaceOrientation];
 }
 
 @end

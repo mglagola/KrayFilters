@@ -32,8 +32,7 @@
 		4D7BF9F71752675400A81F88 /* KFCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BF9F61752675400A81F88 /* KFCaptureButton.m */; };
 		4D7BF9FA175268D100A81F88 /* KFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BF9F9175268D100A81F88 /* KFButton.m */; };
 		4D7BF9FE17526A4B00A81F88 /* KFCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7BF9FD17526A4B00A81F88 /* KFCameraViewController.xib */; };
-		4D7BFA0317528BC600A81F88 /* KFImageHeatFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BFA0217528BC600A81F88 /* KFImageHeatFilter.m */; };
-		4D7BFA0517528C0F00A81F88 /* KFImageHeatFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4D7BFA0417528C0F00A81F88 /* KFImageHeatFilter.fsh */; };
+		4D7BFA0317528BC600A81F88 /* KFImageRedBlueFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BFA0217528BC600A81F88 /* KFImageRedBlueFilter.m */; };
 		E8F275750FA44D0CA7D7F8DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A36B32A297E49ADA313D8E3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -82,9 +81,8 @@
 		4D7BF9F8175268D100A81F88 /* KFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFButton.h; sourceTree = "<group>"; };
 		4D7BF9F9175268D100A81F88 /* KFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFButton.m; sourceTree = "<group>"; };
 		4D7BF9FD17526A4B00A81F88 /* KFCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFCameraViewController.xib; sourceTree = "<group>"; };
-		4D7BFA0117528BC600A81F88 /* KFImageHeatFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFImageHeatFilter.h; sourceTree = "<group>"; };
-		4D7BFA0217528BC600A81F88 /* KFImageHeatFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFImageHeatFilter.m; sourceTree = "<group>"; };
-		4D7BFA0417528C0F00A81F88 /* KFImageHeatFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = KFImageHeatFilter.fsh; sourceTree = "<group>"; };
+		4D7BFA0117528BC600A81F88 /* KFImageRedBlueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFImageRedBlueFilter.h; sourceTree = "<group>"; };
+		4D7BFA0217528BC600A81F88 /* KFImageRedBlueFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFImageRedBlueFilter.m; sourceTree = "<group>"; };
 		6A36B32A297E49ADA313D8E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -268,9 +266,8 @@
 		4D7BFA0017528A8300A81F88 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
-				4D7BFA0117528BC600A81F88 /* KFImageHeatFilter.h */,
-				4D7BFA0217528BC600A81F88 /* KFImageHeatFilter.m */,
-				4D7BFA0417528C0F00A81F88 /* KFImageHeatFilter.fsh */,
+				4D7BFA0117528BC600A81F88 /* KFImageRedBlueFilter.h */,
+				4D7BFA0217528BC600A81F88 /* KFImageRedBlueFilter.m */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -349,7 +346,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7BFA0517528C0F00A81F88 /* KFImageHeatFilter.fsh in Resources */,
 				4D3DB1FA1751C93700AC5AD7 /* InfoPlist.strings in Resources */,
 				4D3DB2021751C93700AC5AD7 /* Default.png in Resources */,
 				4D3DB2041751C93700AC5AD7 /* Default@2x.png in Resources */,
@@ -423,7 +419,7 @@
 				4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */,
 				4D7BF9F71752675400A81F88 /* KFCaptureButton.m in Sources */,
 				4D7BF9FA175268D100A81F88 /* KFButton.m in Sources */,
-				4D7BFA0317528BC600A81F88 /* KFImageHeatFilter.m in Sources */,
+				4D7BFA0317528BC600A81F88 /* KFImageRedBlueFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Mark Glagola. All rights reserved.
 //
 
-#import "GPUImageFilter.h"
+#import "GPUImage.h"
 
-@interface KFImageHeatFilter : GPUImageFilter
+@interface KFImageRedBlueFilter : GPUImageFilter
 
 @end
