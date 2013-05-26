@@ -28,6 +28,14 @@
 		4D3DBBE91751CD0200AC5AD7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE81751CD0200AC5AD7 /* QuartzCore.framework */; };
 		4D3DBBEB1751CD0600AC5AD7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */; };
 		4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */; };
+		4D3DBC191751D85A00AC5AD7 /* MGInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBBFB1751D85A00AC5AD7 /* MGInstagram.m */; };
+		4D3DBC301751DA4C00AC5AD7 /* camera-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DBC2F1751DA4C00AC5AD7 /* camera-button.png */; };
+		4D3DBC431751DABF00AC5AD7 /* UIDevice+isIPAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC341751DABF00AC5AD7 /* UIDevice+isIPAD.m */; };
+		4D3DBC441751DABF00AC5AD7 /* UILabel+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC361751DABF00AC5AD7 /* UILabel+Font.m */; };
+		4D3DBC451751DABF00AC5AD7 /* UIScreen+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC381751DABF00AC5AD7 /* UIScreen+Frame.m */; };
+		4D3DBC461751DABF00AC5AD7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC3A1751DABF00AC5AD7 /* UIView+Frame.m */; };
+		4D3DBC471751DABF00AC5AD7 /* UIView+Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC3C1751DABF00AC5AD7 /* UIView+Xib.m */; };
+		4D3DBC481751DABF00AC5AD7 /* UIViewController+Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBC3E1751DABF00AC5AD7 /* UIViewController+Xib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +97,22 @@
 		4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4D3DBBF11751CD5300AC5AD7 /* KFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCameraViewController.h; sourceTree = "<group>"; };
 		4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCameraViewController.m; sourceTree = "<group>"; };
+		4D3DBBFA1751D85A00AC5AD7 /* MGInstagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGInstagram.h; sourceTree = "<group>"; };
+		4D3DBBFB1751D85A00AC5AD7 /* MGInstagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGInstagram.m; sourceTree = "<group>"; };
+		4D3DBC2F1751DA4C00AC5AD7 /* camera-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-button.png"; sourceTree = "<group>"; };
+		4D3DBC331751DABF00AC5AD7 /* UIDevice+isIPAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+isIPAD.h"; sourceTree = "<group>"; };
+		4D3DBC341751DABF00AC5AD7 /* UIDevice+isIPAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+isIPAD.m"; sourceTree = "<group>"; };
+		4D3DBC351751DABF00AC5AD7 /* UILabel+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Font.h"; sourceTree = "<group>"; };
+		4D3DBC361751DABF00AC5AD7 /* UILabel+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Font.m"; sourceTree = "<group>"; };
+		4D3DBC371751DABF00AC5AD7 /* UIScreen+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Frame.h"; sourceTree = "<group>"; };
+		4D3DBC381751DABF00AC5AD7 /* UIScreen+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Frame.m"; sourceTree = "<group>"; };
+		4D3DBC391751DABF00AC5AD7 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		4D3DBC3A1751DABF00AC5AD7 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		4D3DBC3B1751DABF00AC5AD7 /* UIView+Xib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Xib.h"; sourceTree = "<group>"; };
+		4D3DBC3C1751DABF00AC5AD7 /* UIView+Xib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Xib.m"; sourceTree = "<group>"; };
+		4D3DBC3D1751DABF00AC5AD7 /* UIViewController+Xib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Xib.h"; sourceTree = "<group>"; };
+		4D3DBC3E1751DABF00AC5AD7 /* UIViewController+Xib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Xib.m"; sourceTree = "<group>"; };
+		4D3DBC3F1751DABF00AC5AD7 /* Extensions-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Extensions-Prefix.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +187,7 @@
 				4D3DB1FE1751C93700AC5AD7 /* KFAppDelegate.h */,
 				4D3DB1FF1751C93700AC5AD7 /* KFAppDelegate.m */,
 				4D3DBBEF1751CD5300AC5AD7 /* Classes */,
+				4D3DBC2D1751DA4C00AC5AD7 /* Resources */,
 				4D3DB1F61751C93700AC5AD7 /* Supporting Files */,
 			);
 			path = KrayFilters;
@@ -204,6 +229,8 @@
 		4D3DB2241751C9E500AC5AD7 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				4D3DBC311751DABF00AC5AD7 /* Extensions */,
+				4D3DBBF61751D85A00AC5AD7 /* MGInstagram */,
 				4D3DB7FD1751CB4500AC5AD7 /* GPUImage */,
 			);
 			path = Vendors;
@@ -249,6 +276,67 @@
 				4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D3DBBF61751D85A00AC5AD7 /* MGInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBBF91751D85A00AC5AD7 /* MGInstagram */,
+			);
+			path = MGInstagram;
+			sourceTree = "<group>";
+		};
+		4D3DBBF91751D85A00AC5AD7 /* MGInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBBFA1751D85A00AC5AD7 /* MGInstagram.h */,
+				4D3DBBFB1751D85A00AC5AD7 /* MGInstagram.m */,
+			);
+			path = MGInstagram;
+			sourceTree = "<group>";
+		};
+		4D3DBC2D1751DA4C00AC5AD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBC2E1751DA4C00AC5AD7 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D3DBC2E1751DA4C00AC5AD7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBC2F1751DA4C00AC5AD7 /* camera-button.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4D3DBC311751DABF00AC5AD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBC321751DABF00AC5AD7 /* Categories */,
+				4D3DBC3F1751DABF00AC5AD7 /* Extensions-Prefix.h */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D3DBC321751DABF00AC5AD7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBC331751DABF00AC5AD7 /* UIDevice+isIPAD.h */,
+				4D3DBC341751DABF00AC5AD7 /* UIDevice+isIPAD.m */,
+				4D3DBC351751DABF00AC5AD7 /* UILabel+Font.h */,
+				4D3DBC361751DABF00AC5AD7 /* UILabel+Font.m */,
+				4D3DBC371751DABF00AC5AD7 /* UIScreen+Frame.h */,
+				4D3DBC381751DABF00AC5AD7 /* UIScreen+Frame.m */,
+				4D3DBC391751DABF00AC5AD7 /* UIView+Frame.h */,
+				4D3DBC3A1751DABF00AC5AD7 /* UIView+Frame.m */,
+				4D3DBC3B1751DABF00AC5AD7 /* UIView+Xib.h */,
+				4D3DBC3C1751DABF00AC5AD7 /* UIView+Xib.m */,
+				4D3DBC3D1751DABF00AC5AD7 /* UIViewController+Xib.h */,
+				4D3DBC3E1751DABF00AC5AD7 /* UIViewController+Xib.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +439,7 @@
 				4D3DB2021751C93700AC5AD7 /* Default.png in Resources */,
 				4D3DB2041751C93700AC5AD7 /* Default@2x.png in Resources */,
 				4D3DB2061751C93700AC5AD7 /* Default-568h@2x.png in Resources */,
+				4D3DBC301751DA4C00AC5AD7 /* camera-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +477,13 @@
 				4D3DB1FC1751C93700AC5AD7 /* main.m in Sources */,
 				4D3DB2001751C93700AC5AD7 /* KFAppDelegate.m in Sources */,
 				4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */,
+				4D3DBC191751D85A00AC5AD7 /* MGInstagram.m in Sources */,
+				4D3DBC431751DABF00AC5AD7 /* UIDevice+isIPAD.m in Sources */,
+				4D3DBC441751DABF00AC5AD7 /* UILabel+Font.m in Sources */,
+				4D3DBC451751DABF00AC5AD7 /* UIScreen+Frame.m in Sources */,
+				4D3DBC461751DABF00AC5AD7 /* UIView+Frame.m in Sources */,
+				4D3DBC471751DABF00AC5AD7 /* UIView+Xib.m in Sources */,
+				4D3DBC481751DABF00AC5AD7 /* UIViewController+Xib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
