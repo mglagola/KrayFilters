@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3DB1F01751C93700AC5AD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB1EF1751C93700AC5AD7 /* UIKit.framework */; };
+		4D3DB1F21751C93700AC5AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB1F11751C93700AC5AD7 /* Foundation.framework */; };
+		4D3DB1F41751C93700AC5AD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB1F31751C93700AC5AD7 /* CoreGraphics.framework */; };
+		4D3DB1FA1751C93700AC5AD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB1F81751C93700AC5AD7 /* InfoPlist.strings */; };
+		4D3DB1FC1751C93700AC5AD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DB1FB1751C93700AC5AD7 /* main.m */; };
+		4D3DB2001751C93700AC5AD7 /* KFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DB1FF1751C93700AC5AD7 /* KFAppDelegate.m */; };
+		4D3DB2021751C93700AC5AD7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB2011751C93700AC5AD7 /* Default.png */; };
+		4D3DB2041751C93700AC5AD7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB2031751C93700AC5AD7 /* Default@2x.png */; };
+		4D3DB2061751C93700AC5AD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB2051751C93700AC5AD7 /* Default-568h@2x.png */; };
+		4D3DB20E1751C93700AC5AD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB20D1751C93700AC5AD7 /* SenTestingKit.framework */; };
+		4D3DB20F1751C93700AC5AD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB1EF1751C93700AC5AD7 /* UIKit.framework */; };
+		4D3DB2101751C93700AC5AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DB1F11751C93700AC5AD7 /* Foundation.framework */; };
+		4D3DB2181751C93700AC5AD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB2161751C93700AC5AD7 /* InfoPlist.strings */; };
+		4D3DB21B1751C93700AC5AD7 /* KrayFiltersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DB21A1751C93700AC5AD7 /* KrayFiltersTests.m */; };
+		4D3DBBE01751CB6B00AC5AD7 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBC21751CB4B00AC5AD7 /* libGPUImage.a */; };
+		4D3DBBE31751CCF100AC5AD7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE21751CCF100AC5AD7 /* CoreMedia.framework */; };
+		4D3DBBE51751CCF700AC5AD7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE41751CCF700AC5AD7 /* CoreVideo.framework */; };
+		4D3DBBE71751CCFD00AC5AD7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE61751CCFD00AC5AD7 /* OpenGLES.framework */; };
+		4D3DBBE91751CD0200AC5AD7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBE81751CD0200AC5AD7 /* QuartzCore.framework */; };
+		4D3DBBEB1751CD0600AC5AD7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */; };
+		4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D3DB2111751C93700AC5AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3DB1E41751C93700AC5AD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3DB1EB1751C93700AC5AD7;
+			remoteInfo = KrayFilters;
+		};
+		4D3DBBC11751CB4B00AC5AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		4D3DBBC31751CB4B00AC5AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+		4D3DBBF41751CDA100AC5AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D3DB1EC1751C93700AC5AD7 /* KrayFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrayFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3DB1EF1751C93700AC5AD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D3DB1F11751C93700AC5AD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D3DB1F31751C93700AC5AD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D3DB1F71751C93700AC5AD7 /* KrayFilters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KrayFilters-Info.plist"; sourceTree = "<group>"; };
+		4D3DB1F91751C93700AC5AD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D3DB1FB1751C93700AC5AD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D3DB1FD1751C93700AC5AD7 /* KrayFilters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KrayFilters-Prefix.pch"; sourceTree = "<group>"; };
+		4D3DB1FE1751C93700AC5AD7 /* KFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAppDelegate.h; sourceTree = "<group>"; };
+		4D3DB1FF1751C93700AC5AD7 /* KFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAppDelegate.m; sourceTree = "<group>"; };
+		4D3DB2011751C93700AC5AD7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4D3DB2031751C93700AC5AD7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4D3DB2051751C93700AC5AD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4D3DB20C1751C93700AC5AD7 /* KrayFiltersTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrayFiltersTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3DB20D1751C93700AC5AD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D3DB2151751C93700AC5AD7 /* KrayFiltersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KrayFiltersTests-Info.plist"; sourceTree = "<group>"; };
+		4D3DB2171751C93700AC5AD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D3DB2191751C93700AC5AD7 /* KrayFiltersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KrayFiltersTests.h; sourceTree = "<group>"; };
+		4D3DB21A1751C93700AC5AD7 /* KrayFiltersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KrayFiltersTests.m; sourceTree = "<group>"; };
+		4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
+		4D3DBBE21751CCF100AC5AD7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4D3DBBE41751CCF700AC5AD7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4D3DBBE61751CCFD00AC5AD7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4D3DBBE81751CD0200AC5AD7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4D3DBBF11751CD5300AC5AD7 /* KFCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCameraViewController.h; sourceTree = "<group>"; };
+		4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCameraViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D3DB1E91751C93700AC5AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3DBBEB1751CD0600AC5AD7 /* AVFoundation.framework in Frameworks */,
+				4D3DBBE91751CD0200AC5AD7 /* QuartzCore.framework in Frameworks */,
+				4D3DBBE71751CCFD00AC5AD7 /* OpenGLES.framework in Frameworks */,
+				4D3DBBE51751CCF700AC5AD7 /* CoreVideo.framework in Frameworks */,
+				4D3DBBE31751CCF100AC5AD7 /* CoreMedia.framework in Frameworks */,
+				4D3DBBE01751CB6B00AC5AD7 /* libGPUImage.a in Frameworks */,
+				4D3DB1F01751C93700AC5AD7 /* UIKit.framework in Frameworks */,
+				4D3DB1F21751C93700AC5AD7 /* Foundation.framework in Frameworks */,
+				4D3DB1F41751C93700AC5AD7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3DB2081751C93700AC5AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3DB20E1751C93700AC5AD7 /* SenTestingKit.framework in Frameworks */,
+				4D3DB20F1751C93700AC5AD7 /* UIKit.framework in Frameworks */,
+				4D3DB2101751C93700AC5AD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D3DB1E31751C93700AC5AD7 = {
+			isa = PBXGroup;
+			children = (
+				4D3DB1F51751C93700AC5AD7 /* KrayFilters */,
+				4D3DB2131751C93700AC5AD7 /* KrayFiltersTests */,
+				4D3DB2241751C9E500AC5AD7 /* Vendors */,
+				4D3DB1EE1751C93700AC5AD7 /* Frameworks */,
+				4D3DB1ED1751C93700AC5AD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D3DB1ED1751C93700AC5AD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB1EC1751C93700AC5AD7 /* KrayFilters.app */,
+				4D3DB20C1751C93700AC5AD7 /* KrayFiltersTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D3DB1EE1751C93700AC5AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBBEA1751CD0600AC5AD7 /* AVFoundation.framework */,
+				4D3DBBE81751CD0200AC5AD7 /* QuartzCore.framework */,
+				4D3DBBE61751CCFD00AC5AD7 /* OpenGLES.framework */,
+				4D3DBBE41751CCF700AC5AD7 /* CoreVideo.framework */,
+				4D3DBBE21751CCF100AC5AD7 /* CoreMedia.framework */,
+				4D3DB1EF1751C93700AC5AD7 /* UIKit.framework */,
+				4D3DB1F11751C93700AC5AD7 /* Foundation.framework */,
+				4D3DB1F31751C93700AC5AD7 /* CoreGraphics.framework */,
+				4D3DB20D1751C93700AC5AD7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D3DB1F51751C93700AC5AD7 /* KrayFilters */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB1FE1751C93700AC5AD7 /* KFAppDelegate.h */,
+				4D3DB1FF1751C93700AC5AD7 /* KFAppDelegate.m */,
+				4D3DBBEF1751CD5300AC5AD7 /* Classes */,
+				4D3DB1F61751C93700AC5AD7 /* Supporting Files */,
+			);
+			path = KrayFilters;
+			sourceTree = "<group>";
+		};
+		4D3DB1F61751C93700AC5AD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB1F71751C93700AC5AD7 /* KrayFilters-Info.plist */,
+				4D3DB1F81751C93700AC5AD7 /* InfoPlist.strings */,
+				4D3DB1FB1751C93700AC5AD7 /* main.m */,
+				4D3DB1FD1751C93700AC5AD7 /* KrayFilters-Prefix.pch */,
+				4D3DB2011751C93700AC5AD7 /* Default.png */,
+				4D3DB2031751C93700AC5AD7 /* Default@2x.png */,
+				4D3DB2051751C93700AC5AD7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D3DB2131751C93700AC5AD7 /* KrayFiltersTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB2191751C93700AC5AD7 /* KrayFiltersTests.h */,
+				4D3DB21A1751C93700AC5AD7 /* KrayFiltersTests.m */,
+				4D3DB2141751C93700AC5AD7 /* Supporting Files */,
+			);
+			path = KrayFiltersTests;
+			sourceTree = "<group>";
+		};
+		4D3DB2141751C93700AC5AD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB2151751C93700AC5AD7 /* KrayFiltersTests-Info.plist */,
+				4D3DB2161751C93700AC5AD7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D3DB2241751C9E500AC5AD7 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB7FD1751CB4500AC5AD7 /* GPUImage */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		4D3DB7FD1751CB4500AC5AD7 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB9181751CB4800AC5AD7 /* framework */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
+		4D3DB9181751CB4800AC5AD7 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		4D3DB91A1751CB4800AC5AD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBBC21751CB4B00AC5AD7 /* libGPUImage.a */,
+				4D3DBBC41751CB4B00AC5AD7 /* GPUImageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D3DBBEF1751CD5300AC5AD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBBF01751CD5300AC5AD7 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4D3DBBF01751CD5300AC5AD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D3DBBF11751CD5300AC5AD7 /* KFCameraViewController.h */,
+				4D3DBBF21751CD5300AC5AD7 /* KFCameraViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D3DB1EB1751C93700AC5AD7 /* KrayFilters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3DB21E1751C93700AC5AD7 /* Build configuration list for PBXNativeTarget "KrayFilters" */;
+			buildPhases = (
+				4D3DB1E81751C93700AC5AD7 /* Sources */,
+				4D3DB1E91751C93700AC5AD7 /* Frameworks */,
+				4D3DB1EA1751C93700AC5AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D3DBBF51751CDA100AC5AD7 /* PBXTargetDependency */,
+			);
+			name = KrayFilters;
+			productName = KrayFilters;
+			productReference = 4D3DB1EC1751C93700AC5AD7 /* KrayFilters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D3DB20B1751C93700AC5AD7 /* KrayFiltersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3DB2211751C93700AC5AD7 /* Build configuration list for PBXNativeTarget "KrayFiltersTests" */;
+			buildPhases = (
+				4D3DB2071751C93700AC5AD7 /* Sources */,
+				4D3DB2081751C93700AC5AD7 /* Frameworks */,
+				4D3DB2091751C93700AC5AD7 /* Resources */,
+				4D3DB20A1751C93700AC5AD7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D3DB2121751C93700AC5AD7 /* PBXTargetDependency */,
+			);
+			name = KrayFiltersTests;
+			productName = KrayFiltersTests;
+			productReference = 4D3DB20C1751C93700AC5AD7 /* KrayFiltersTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D3DB1E41751C93700AC5AD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KF;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mark Glagola";
+			};
+			buildConfigurationList = 4D3DB1E71751C93700AC5AD7 /* Build configuration list for PBXProject "KrayFilters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4D3DB1E31751C93700AC5AD7;
+			productRefGroup = 4D3DB1ED1751C93700AC5AD7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4D3DB91A1751CB4800AC5AD7 /* Products */;
+					ProjectRef = 4D3DB9191751CB4800AC5AD7 /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4D3DB1EB1751C93700AC5AD7 /* KrayFilters */,
+				4D3DB20B1751C93700AC5AD7 /* KrayFiltersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4D3DBBC21751CB4B00AC5AD7 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 4D3DBBC11751CB4B00AC5AD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4D3DBBC41751CB4B00AC5AD7 /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = 4D3DBBC31751CB4B00AC5AD7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D3DB1EA1751C93700AC5AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3DB1FA1751C93700AC5AD7 /* InfoPlist.strings in Resources */,
+				4D3DB2021751C93700AC5AD7 /* Default.png in Resources */,
+				4D3DB2041751C93700AC5AD7 /* Default@2x.png in Resources */,
+				4D3DB2061751C93700AC5AD7 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3DB2091751C93700AC5AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3DB2181751C93700AC5AD7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D3DB20A1751C93700AC5AD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D3DB1E81751C93700AC5AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3DB1FC1751C93700AC5AD7 /* main.m in Sources */,
+				4D3DB2001751C93700AC5AD7 /* KFAppDelegate.m in Sources */,
+				4D3DBBF31751CD5300AC5AD7 /* KFCameraViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3DB2071751C93700AC5AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3DB21B1751C93700AC5AD7 /* KrayFiltersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D3DB2121751C93700AC5AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D3DB1EB1751C93700AC5AD7 /* KrayFilters */;
+			targetProxy = 4D3DB2111751C93700AC5AD7 /* PBXContainerItemProxy */;
+		};
+		4D3DBBF51751CDA100AC5AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = 4D3DBBF41751CDA100AC5AD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D3DB1F81751C93700AC5AD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D3DB1F91751C93700AC5AD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4D3DB2161751C93700AC5AD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D3DB2171751C93700AC5AD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D3DB21C1751C93700AC5AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D3DB21D1751C93700AC5AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D3DB21F1751C93700AC5AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrayFilters/KrayFilters-Prefix.pch";
+				HEADER_SEARCH_PATHS = "Vendors/GPUImage/framework/**";
+				INFOPLIST_FILE = "KrayFilters/KrayFilters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4D3DB2201751C93700AC5AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrayFilters/KrayFilters-Prefix.pch";
+				HEADER_SEARCH_PATHS = "Vendors/GPUImage/framework/**";
+				INFOPLIST_FILE = "KrayFilters/KrayFilters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4D3DB2221751C93700AC5AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KrayFilters.app/KrayFilters";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrayFilters/KrayFilters-Prefix.pch";
+				INFOPLIST_FILE = "KrayFiltersTests/KrayFiltersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4D3DB2231751C93700AC5AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KrayFilters.app/KrayFilters";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KrayFilters/KrayFilters-Prefix.pch";
+				INFOPLIST_FILE = "KrayFiltersTests/KrayFiltersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D3DB1E71751C93700AC5AD7 /* Build configuration list for PBXProject "KrayFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3DB21C1751C93700AC5AD7 /* Debug */,
+				4D3DB21D1751C93700AC5AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3DB21E1751C93700AC5AD7 /* Build configuration list for PBXNativeTarget "KrayFilters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3DB21F1751C93700AC5AD7 /* Debug */,
+				4D3DB2201751C93700AC5AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D3DB2211751C93700AC5AD7 /* Build configuration list for PBXNativeTarget "KrayFiltersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3DB2221751C93700AC5AD7 /* Debug */,
+				4D3DB2231751C93700AC5AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D3DB1E41751C93700AC5AD7 /* Project object */;
+}

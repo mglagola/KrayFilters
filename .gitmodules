@@ -1,0 +1,3 @@
+[submodule "Vendors/GPUImage"]
+	path = Vendors/GPUImage
+	url = https://github.com/BradLarson/GPUImage.git
