@@ -33,6 +33,13 @@
 		4D7BF9FA175268D100A81F88 /* KFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BF9F9175268D100A81F88 /* KFButton.m */; };
 		4D7BF9FE17526A4B00A81F88 /* KFCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7BF9FD17526A4B00A81F88 /* KFCameraViewController.xib */; };
 		4D7BFA0317528BC600A81F88 /* KFImageRedBlueFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BFA0217528BC600A81F88 /* KFImageRedBlueFilter.m */; };
+		4D929DFD17FFDFB1001AF5E6 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929DF517FFDFB1001AF5E6 /* Icon-72.png */; };
+		4D929DFE17FFDFB1001AF5E6 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929DF617FFDFB1001AF5E6 /* Icon-72@2x.png */; };
+		4D929E0917FFE083001AF5E6 /* iphone-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929E0617FFE083001AF5E6 /* iphone-57.png */; };
+		4D929E0A17FFE083001AF5E6 /* iphone-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929E0717FFE083001AF5E6 /* iphone-114.png */; };
+		4D929E0B17FFE083001AF5E6 /* iphone-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929E0817FFE083001AF5E6 /* iphone-120.png */; };
+		4D929E0E17FFE0DA001AF5E6 /* ipad-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929E0C17FFE0DA001AF5E6 /* ipad-76.png */; };
+		4D929E0F17FFE0DA001AF5E6 /* ipad-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D929E0D17FFE0DA001AF5E6 /* ipad-152.png */; };
 		E8F275750FA44D0CA7D7F8DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A36B32A297E49ADA313D8E3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +90,13 @@
 		4D7BF9FD17526A4B00A81F88 /* KFCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KFCameraViewController.xib; sourceTree = "<group>"; };
 		4D7BFA0117528BC600A81F88 /* KFImageRedBlueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFImageRedBlueFilter.h; sourceTree = "<group>"; };
 		4D7BFA0217528BC600A81F88 /* KFImageRedBlueFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFImageRedBlueFilter.m; sourceTree = "<group>"; };
+		4D929DF517FFDFB1001AF5E6 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Images/Icon-72.png"; sourceTree = "<group>"; };
+		4D929DF617FFDFB1001AF5E6 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Resources/Images/Icon-72@2x.png"; sourceTree = "<group>"; };
+		4D929E0617FFE083001AF5E6 /* iphone-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-57.png"; path = "Resources/Images/iphone-57.png"; sourceTree = "<group>"; };
+		4D929E0717FFE083001AF5E6 /* iphone-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-114.png"; path = "Resources/Images/iphone-114.png"; sourceTree = "<group>"; };
+		4D929E0817FFE083001AF5E6 /* iphone-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-120.png"; path = "Resources/Images/iphone-120.png"; sourceTree = "<group>"; };
+		4D929E0C17FFE0DA001AF5E6 /* ipad-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-76.png"; path = "Resources/Images/ipad-76.png"; sourceTree = "<group>"; };
+		4D929E0D17FFE0DA001AF5E6 /* ipad-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-152.png"; path = "Resources/Images/ipad-152.png"; sourceTree = "<group>"; };
 		6A36B32A297E49ADA313D8E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -222,6 +236,7 @@
 		4D3DBC2D1751DA4C00AC5AD7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D929E0517FFDFBD001AF5E6 /* Icons */,
 				4D7BF9FC17526A3A00A81F88 /* Xibs */,
 				4D3DBC2E1751DA4C00AC5AD7 /* Images */,
 			);
@@ -270,6 +285,21 @@
 				4D7BFA0217528BC600A81F88 /* KFImageRedBlueFilter.m */,
 			);
 			path = Filters;
+			sourceTree = "<group>";
+		};
+		4D929E0517FFDFBD001AF5E6 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				4D929E0617FFE083001AF5E6 /* iphone-57.png */,
+				4D929E0717FFE083001AF5E6 /* iphone-114.png */,
+				4D929E0817FFE083001AF5E6 /* iphone-120.png */,
+				4D929DF517FFDFB1001AF5E6 /* Icon-72.png */,
+				4D929DF617FFDFB1001AF5E6 /* Icon-72@2x.png */,
+				4D929E0C17FFE0DA001AF5E6 /* ipad-76.png */,
+				4D929E0D17FFE0DA001AF5E6 /* ipad-152.png */,
+			);
+			name = Icons;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,11 +376,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D929E0F17FFE0DA001AF5E6 /* ipad-152.png in Resources */,
 				4D3DB1FA1751C93700AC5AD7 /* InfoPlist.strings in Resources */,
 				4D3DB2021751C93700AC5AD7 /* Default.png in Resources */,
+				4D929E0B17FFE083001AF5E6 /* iphone-120.png in Resources */,
+				4D929DFE17FFDFB1001AF5E6 /* Icon-72@2x.png in Resources */,
 				4D3DB2041751C93700AC5AD7 /* Default@2x.png in Resources */,
+				4D929E0A17FFE083001AF5E6 /* iphone-114.png in Resources */,
+				4D929E0E17FFE0DA001AF5E6 /* ipad-76.png in Resources */,
+				4D929E0917FFE083001AF5E6 /* iphone-57.png in Resources */,
 				4D3DB2061751C93700AC5AD7 /* Default-568h@2x.png in Resources */,
 				4D3DBC301751DA4C00AC5AD7 /* camera-button.png in Resources */,
+				4D929DFD17FFDFB1001AF5E6 /* Icon-72.png in Resources */,
 				4D7BF9FE17526A4B00A81F88 /* KFCameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
